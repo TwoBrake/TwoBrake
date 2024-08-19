@@ -4,7 +4,7 @@
 I'm a Full Stack Website Developer with a strong interest in all things relating to website development. I enjoy working in front-end and back-end environments. I am always looking for opportunities to collaborate on new projects.
 
 ## Skills & Technologies
-- **Languages:** JavaScript, TypeScript, Lua, C#
+- **Languages:** JavaScript, TypeScript, Lua, C#, Java
 - **Technologies:** React, Next.js, Node.js
  - **Specialties:** Front-end & back-end Development, UI/UX Design
        
