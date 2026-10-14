@@ -16,13 +16,23 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v6
 
-      - name: Generate stats card
+      - name: Generate Statistics
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: stats
-          options: username=${{ github.repository_owner }}&show_icons=true&include_all_commits=true
+          options: username=${{ github.repository_owner }}&show_icons=true&include_all_commits=true&theme=dark_github&hide_rank=true&hide_title=true&disable_animations=true&show_icons=true
           path: profile/stats.svg
           token: ${{ secrets.STATISTICS_TOKEN }}
+          fail_on_error: true
+
+      - name: Generate Top Languages Card
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: top-langs
+          options: username=${{ github.repository_owner }}&layout=compact&langs_count=6&include_all_commits=true&theme=dark_github&hide_title=true&layout=compact&disable_animations=true
+          path: profile/top-langs.svg
+          token: ${{ secrets.STATISTICS_TOKEN }}
+          fail_on_error: true
 
       - name: Commit cards
         run: |
